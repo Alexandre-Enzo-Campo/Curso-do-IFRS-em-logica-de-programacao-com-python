@@ -1,0 +1,676 @@
+Games e Lógica - Ensino de Lógica de Programação com Jogos Digitais - 3ª Turma
+
+Fase 1 - Lógica de Programação, Algoritmos e Pensamento Computacional
+teve somente leitura.
+
+Fase 2 - Variáveis e Tipos de Dados
+
+Desafio Prático: Questão  1
+
+Faça um programa que armazene o número 42 em uma variável chamada "variavel" (sem as aspas).
+
+Resposta:
+variavel = 42
+print(variavel)
+
+Desafio Prático: Questão 2
+
+Altere o valor da variável presente no arquivo de resposta para "Olá Mundo".
+
+Resposta:
+valor = ('Olá Mundo')
+print (valor)
+
+Desafio Prático: Questão 3
+
+Faça um programa que armazene o nome "Rafael" em uma variável chamada nome e o número inteiro 18 em uma variável chamada idade.
+
+Resposta:
+nome = ('Rafael')
+idade = ('18')
+print(nome)
+print(idade)
+
+Desafio Prático: Questão 4
+
+Realize a concatenação das duas variáveis presentes no arquivo de resposta.
+
+Resposta:
+a = "A melhor solução para um problema "
+b = "é geralmente a mais fácil..."
+print(f'{a} {b}') #Apenas modifique esta linha, adicionando a concatenação das duas variáveis dentro dos parênteses
+
+Desafio Prático: Questão 5
+
+Armazene os números inteiros 15 e 2 em variáveis. Realize a soma, subtração, multiplicação e divisão destas variáveis.
+
+Resposta:
+soma = 15+2
+sub = 15-2
+mult = 15*2
+div = 15/2
+
+print(soma)
+print(sub)
+print(mult)
+print(div)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Fase 3 - Input and Output
+
+Desafio Prático: Questão 1
+
+Faça um programa que receba duas entradas do tipo inteiro e imprima a soma dos dois. Por exemplo:
+
+Entrada:
+1
+2
+
+Saída:
+3
+
+Resposta:
+n1 = int(input())
+n2 = int(input())
+soma = n1 + n2
+print (soma)
+
+Desafio Prático: Questão 2
+
+Faça um programa que receba um nome e imprima na tela a frase: It's me, (nome inserido)
+
+Exemplo:
+
+Entrada:
+Pedro
+
+Saída:
+It's me, Pedro
+
+Resposta:
+nome = str(input())
+print (f'It's me, {nome}')
+
+Desafio Prático: Questão 3
+
+Faça um programa que receba o nome, idade e CPF de uma pessoa e, no fim, imprima as informações na tela.
+
+Exemplo:
+
+Entrada:
+Rafael
+18
+23718295
+
+Saída:
+Rafael
+18
+23718295
+
+Resposta:
+nome = str(input())
+n1 = int(input())
+n2 = int(input())
+print (f'{nome} {n1} {n2}')
+
+Desafio Prático: Questão 4
+
+Faça um programa que receba duas entradas, a primeira do tipo float e outra do tipo inteiro e imprima o produto dos dois. Por exemplo:
+
+Entrada:
+1.5
+2
+
+Saída:
+3.0
+
+Resposta:
+n1 = float(input())
+n2 = int(input())
+print (f'{n1*n2}')
+
+Desafio Prático: Questão 5
+
+Faça um programa que retorne, respectivamente, a soma, diferença, produto e quociente de variáveis de ponto flutuante informadas pelo usuário.
+
+Entrada:
+2.0
+1.0
+
+Saída:
+3.0
+1.0
+2.0
+2.0
+
+Resposta:
+n1 = float(input())
+n2 = float(input())
+n3 = n1+n2
+n4 = (n1-n2)
+n5 = (n1*n2)+0
+n6 = n1/n2
+print (f'{n3}')
+print (f'{n4}')
+print (f'{n5}')
+print (f'{n6}')
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Fase 4 - Estruturas Condicionais
+
+Desafio Prático: Questão 1
+
+Faça um programa que receba 3 números inteiros A, B e C e determina se a soma A + B é maior ou igual a C ou não. Por exemplo:
+
+Entrada:
+1
+2
+3
+
+Saída:
+A + B é maior ou igual a C
+
+Entrada:
+1
+1
+3
+
+Saída:
+A + B não é maior ou igual a C
+
+Resposta:
+A = int(input())
+B = int(input())
+C = int(input())
+if A+B >= C:
+    print ('A+B é maior ou igual a C')
+else:
+    print ('A+B não é maior ou igual a C')
+
+Desafio Prático: Questão 2
+
+Faça um programa que receba um número inteiro e diga se ele é maior que 10 e menor que 20. Por exemplo:
+
+Entrada:
+12
+
+Saída:
+O número digitado é maior que 10 e menor que 20
+
+
+Entrada:
+7
+
+Saída:
+O número digitado não é maior que 10 e menor que 20
+
+Resposta:
+n1 = int(input())
+if n1 > 10: 
+    print (f'O número digitado é maior que 10 e menor que 20')
+else:
+    print (f'O número digitado não é maior que 10 e menor que 20')
+
+Desafio Prático: Questão 3
+
+Faça um programa que receba um número inteiro e retorne se o número é par ou ímpar.
+
+Entrada:
+1
+
+Saída:
+Ímpar
+
+
+Entrada:
+2
+
+Saída:
+Par
+
+Resposta:
+n1 = int(input())
+if (n1 % 2) == 1:
+    print ('Ímpar')
+else:    
+    print ('Par')
+
+Desafio Prático: Questão 4
+
+Faça um programa que receba um número inteiro e uma string com uma operação (+, -, * ou /). Retorne o resultado da operação digitada entre o número informado e o número 2.
+
+Entrada:
+1
++
+
+Saída:
+3
+
+Entrada:
+2
+/
+
+Saída:
+1
+
+Resposta:
+num = int(input())
+sinal = str(input())
+if (sinal == '+'):
+    print (num + 2)
+if (sinal == '-'):
+    print (num - 2)
+if (sinal == '/'):
+    print (num / 2)
+if (sinal == '*'):
+    print (num * 2)
+
+Desafio Prático: Questão 5
+
+Elabore um programa que receba, respectivamente, o peso e altura de um adulto e determine sua condição com base em seu IMC (Índice de Massa Corporal). Considere a tabela abaixo como os tipos de condições e a fórmula do IMC como IMC = Peso ÷ (Altura)².
+
+Abaixo de 18,5 - Magreza
+Entre 18,5 e 25 - Normal
+Entre 25 e 30 - Sobrepeso
+Entre 30 e 40 - Obesidade
+Acima de 40 - Obesidade Grave
+
+Entrada:
+4
+2
+
+Saída:
+Magreza
+
+Entrada:
+54
+0.5
+
+Saída:
+Obesidade Grave
+
+Resposta:
+peso = float(input())
+altura = float(input())
+imc = peso / (altura ** 2)
+if (imc < 18.5):
+    print ('Magreza')
+elif (18.5 <= imc < 25):
+    print ('Normal')
+elif (25 <= imc < 30):
+    print ('Sobrepeso')
+elif (30 <= imc < 40):
+    print ('Obesidade')
+elif (imc > 40):
+    print ('Obesidade grave')
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Fase 5: Laços de Repetição
+
+Desafio Prático: Questão 1
+
+Utilizando laços de repetição, faça um programa que imprima na tela todos os números de 0 a 20.
+
+Saída:
+0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19
+
+Resposta:
+for i in range (20):
+    print (i)
+
+Desafio Prático: Questão 2
+
+Utilizando laços de repetição, faça um programa que imprima na tela todos os números pares de 0 a 11.
+
+Saída:
+0
+2
+4
+6
+8
+10
+
+Resposta: 
+for c in range(0, 11):
+    if c % 2 == 0:
+        print (c, end=' ')
+
+Desafio Prático: Questão 3
+
+Utilizando laços de repetição, faça um programa que imprima na tela a soma de todos números divisíveis por 4 de 400 a 550.
+
+Saída:
+18012
+
+Resposta:
+soma = 0
+for c in range(400, 550):
+    if c % 4 == 0:
+        soma = soma + c
+print (f'{soma}')
+
+Desafio Prático: Questão 4
+
+Utilizando laços de repetição, faça um programa que recebe um número inteiro informado pelo usuário e retorne a soma deste número com os próximos 10 números.
+
+Entrada:
+10
+
+Saída:
+165
+
+Resposta:
+num = soma = 0
+num = int(input())
+for num in range (num, num + 11):
+    soma = num + soma
+print (f'{soma}')
+
+Desafio Prático: Questão 5
+
+Dentre todos os mistérios da Matemática, a sequência de Fibonacci é considerada uma das mais fascinantes descobertas da história. A sequência de números proposta pelo matemático italiano Leonardo de Pisa, mais conhecido como Fibonacci, possui o numeral 1 como o primeiro e o segundo termo da ordem, e os elementos seguintes são originados pela soma de seus dois antecessores.
+
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584...
+
+-SILVA, Marcos.
+Disponível em: https://mundoeducacao.uol.com.br/matematica/sequencia-fibonacci.htm
+
+Com base no enunciado acima, desenvolva um programa que imprima na tela os N primeiros números da sequência Fibonacci, sendo N determinado pelo usuário.
+
+Entrada:
+8
+
+Saída:
+1
+1
+2
+3
+5
+8
+13
+21
+
+Resposta:
+proximo = soma = cont = 0
+anterior = 1
+num = int(input())
+for i in range (0, num):
+    soma = anterior + proximo
+    anterior = proximo
+    proximo = soma
+    print (f'{proximo}')
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Fase 6: Listas
+
+Desafio Prático: Questão 1
+
+Faça um programa que preencha uma lista com 5 números inteiros (informados pelo usuário) e imprima na tela todos os números maiores que 1 e menores que 20.
+
+Entrada:
+5
+21
+0
+12
+13
+
+Saída:
+5
+12
+13
+
+Resposta:
+lista = []
+
+for i in range(5):
+    inteiro = int(input())
+    lista.append(inteiro)
+    
+for i in range(len(lista)):
+    if lista[i] > 1:
+        if lista[i] < 20:
+            print(lista[i])
+
+Desafio Prático: Questão 2
+
+Faça um programa que receba preencha uma lista com 5 títulos de jogos, séries, etc. e crie uma variável para armazenar um último nome. Retorne se o nome presente na variável está presente na lista ou não.
+
+Entrada:
+Overwatch
+Outer Wilds
+Undertale
+Hearthstone
+Half-Life
+Half-Life
+
+Saída:
+Título encontrado na lista
+
+Entrada:
+Undertale
+Stardew Valley
+Minecraft
+Animal Crossing
+Doom
+Quake
+
+Saída:
+Título não encontrado na lista
+
+Resposta:
+lista = []
+
+for i in range(5):
+    item = str(input())
+    lista.append(item)
+    
+entrada = str(input())
+
+if entrada in lista:
+    print('Título encontrado na lista')
+else:
+    print(' Título não encontrado na lista')
+
+Desafio Prático: Questão 3
+
+Faça um programa que receba as notas de três trimestres de 5 alunos (floats). Calcule a média de cada aluno e armazene as médias maiores ou iguais que 7 em uma lista de alunos aprovados e as menores 7 em um lista de alunos reprovados. Imprima a lista de reprovados primeiro e, em seguida, a de aprovados. Considere que a média é igual a soma de todas as notas dividida por 3.
+
+Entrada:
+
+input:
+5
+5
+5
+7
+7
+7
+9
+9
+9
+10
+10
+10
+2
+2
+2
+
+Saída:
+5.0
+2.0
+7.0
+9.0
+10.0
+
+Resposta:
+lista_alunos = []
+
+for i in range(5):
+  lista_notas = []
+  for j in range(3):
+    nota = float(input())
+    lista_notas.append(nota)
+  lista_alunos.append(lista_notas)
+
+reprovados = []
+aprovados = []
+
+for nota_aluno in lista_alunos:
+  media_aluno = sum(nota_aluno) / 3
+  if media_aluno >= 7:
+    aprovados.append(int(media_aluno))
+  else:
+    reprovados.append(int(media_aluno))
+
+print(reprovados)    
+print(aprovados)
+
+Desafio Prático: Questão 4
+
+Faça um programa que preencha uma lista com 5 letras informadas pelo usuário e imprima na tela apenas as que forem consoantes. Desconsidere a possibilidade do usuário informar um caractere diferente de uma letra minúscula.
+
+Entrada:
+h
+e
+l
+l
+o
+
+Saída:
+h
+l
+l
+
+Resposta:
+listaChar = []
+for i in range(5):
+ listaChar.append(str(input(i)))
+ 
+char = listaChar
+for char in listaChar:
+ if char not in ('a','e','i','o','u'):
+    print(char)
+
+Desafio Prático: Questão 5
+
+Faça um programa que, dado uma lista de 5 números inteiros (informados pelo usuário), encontre e imprima o menor número.
+
+Entrada:
+3
+2
+1
+4
+5
+
+Saída:
+1
+
+Resposta:
+list = []
+
+for i in range(5):
+    list.append(int(input()))
+
+print (min(list))
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Fase 7: Um Herói Funcional
+
+Desafio Prático: Questão 1
+
+Faça um programa que receba 2 números inteiros do usuário e imprima o produto de ambos dentro de uma função.
+
+Entrada:
+2
+2
+
+Saída:
+4
+
+Resposta:
+def produto(a,b):
+    print(a*b)
+    
+n1 = int(input())
+n2 = int(input())
+
+produto(n1,n2)
+
+Desafio Prático: Questão 2
+
+Faça um programa que recebe um número do usuário e, dentro de uma função, imprima se ele é maior que 42 (True ou False).
+
+Entrada:
+76
+
+Saída:
+True
+
+Resposta:
+def valida_numero(numero):
+    print(numero > 42)
+
+numero = int(input())
+
+
+valida_numero(numero)
+
+Desafio Prático: Questão 3
+
+Faça um programa que receba um número N (informado pelo usuário) dentro de uma função e, em outra função, imprima todos os números de 0 até este número N.
+
+Entrada:
+10
+
+Saída:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Resposta:
+num = int(input())
+
+for num in range(0, num+1):
+    print(num)
+
+Desafio Prático: Questão 4
+
+Faça um programa que receba uma string de um usuário e a retorne dentro de uma função. Crie uma variável que receberá o valor retornado e imprima esta variável.
+
+Entrada:
+Olá
+
+Saída:
+Olá
+
+Resposta:
+C = str(input())
+    
+print(C)
+
+Desafio Prático: Questão 5
+
+Faça um programa que contenha uma função que recebe três números do usuário e imprima qual é o maior.
+
+Entrada:
+1
+2
+3
+
+Saída:
+3
+
+Resposta:
+list = []
+
+for i in range(3):
+    list.append(int(input()))
+
+print (max(list))
